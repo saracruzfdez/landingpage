@@ -3,12 +3,22 @@
     font-family: Avenir, sans-serif;
     padding: 0px;
     margin: 0px;
-    text-align: justify;
     box-sizing: border-box;
 }
 
-body{
-    background: #ffefd4;
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    margin: 0 auto;
+}
+
+span{
+    color: rgb(75, 0, 145);
+}
+
+h2{
+    color: rgb(75, 0, 145);
+    margin-bottom: 10px;
 }
 
 p{
@@ -16,42 +26,87 @@ p{
     line-height: 1.5em;
 }
 
-/*HEADER*/
-header{
-    height: 120px;
-    padding: 20px 0px;
-    background: url("https://images.pexels.com/photos/1029622/pexels-photo-1029622.jpeg?auto=compress&cs=tinysrgb&w=800");
+/*BANNER*/
+.banner{    
+    text-align: center;  
+    background-image: url('https://images.unsplash.com/photo-1655635949384-f737c5133dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
 }
 
-header h1{
-    color: rgb(0, 0, 0);
-    font-size: 3em;
-    width: 90%;
-    margin: 0 auto;
-}
-
-header span{
-    color: rgb(224, 166, 50);
-}
-
-/*SECTION INFOS*/
+/*CONTAINER*/
 .photo{
-    text-align: right;
-    margin: 80px;
-    margin-top: -80px;
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-top: -75px;
 }
 
-.photo img{
-    width: 200px;
-    height: 200px;
-    border: 3px solid rgb(222, 177, 0);
-    border-radius: 50%;
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-left: 80px;
+}
+
+.profil{
+    margin-right: 60px;
 }
 
 .presentation{
-    display: flex;
-    flex-flow: row wrap;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.presentation p{
+    font-weight: bold;}
+
+li{
     margin-bottom: 10px;
 }
 
+.formulaire{
+    width: 80%;
+}
+
+.introform{
+    margin-bottom: 10px;
+}
+
+.introform p{
+    font-weight: bold;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+textarea{
+    color: rgb(187, 187, 187);
+}
+
+.button{
+    margin-top: 10px;
+}
+
+/*FOOTER*/
+.footer{    
+    margin-top: 30px;
+    text-align: center;  
+    background-image: url('https://images.unsplash.com/photo-1655635949384-f737c5133dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.footer h3{
+    color: rgb(255, 255, 255);
+}
